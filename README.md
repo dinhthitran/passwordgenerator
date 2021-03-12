@@ -1,6 +1,5 @@
-# passwordgenerator
-# Portfolio
-Homework Assignment #2 Monash Bootcamp - Advanced CSS
+# Password-Generator
+Homework Assignment #3 Monash Bootcamp 2021 - JavaScript
 
 
 ## Deployed portfolio of work samples and page functionality.
