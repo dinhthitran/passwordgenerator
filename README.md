@@ -1,6 +1,12 @@
 # Password-Generator
 Homework Assignment #3 Monash Bootcamp 2021 - JavaScript
 
+QUICK NOTES
+
+-improvements from last read me noted
+-add screen shofts / gifs of the application Lu-TA
+-what is it for? how to use it? how to install it? hot to report issues and how to make a contribution
+
 
 ## Deployed portfolio of work samples and page functionality.
 

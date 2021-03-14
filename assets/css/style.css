@@ -7,9 +7,10 @@
 html,
 body,
 .wrapper {
-  height: 100%;
+  height: 95%;
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -118,6 +119,20 @@ button[disabled] {
   overflow: hidden;
 }
 
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+
+/* This is the style used for responsiveness */
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -128,10 +143,17 @@ button[disabled] {
   #password {
     font-size: 1rem;
   }
+  .wrapper {
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
   }
+  .wrapper {
+    text-align: center;
+  }
+
 }
