@@ -14,8 +14,8 @@ It includes a responsive user interface that adapts to multiple screen sizes.
 
 This project has been deployed. Please follow the links below to get to the deployed application and repository.
 
-* [GitHub Repository](www.blah.com)
-* [Deployed Application](www.blah.com)
+* [GitHub Repository](https://github.com/dinhthitran)
+* [Deployed Application](https://dinhthitran.github.io/passwordgenerator/)
 
 
 ## Functionality
@@ -45,6 +45,7 @@ This project has been deployed. Please follow the links below to get to the depl
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality:
+![image](https://user-images.githubusercontent.com/78635889/111157305-d8bc6980-85ea-11eb-9af2-002ba81e7615.png)
 
 
 ### File Execution:
