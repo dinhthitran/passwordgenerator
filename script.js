@@ -25,16 +25,22 @@ var toUpper = function (x) {
 // creates variable for uppercase conversion
 alpha2 = alpha.map(toUpper);
 
-var get = document.querySelector("#generate");
+// // Assignment Code
+// var generateBtn = document.querySelector("#generate");
 
-get.addEventListener("click", function () {
+var generateBtn = document.querySelector("#generate");
+
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", function () {
   ps = generatePassword();
   document.getElementById("password").placeholder = ps;
 });
 
-//This starts a function to generate a password
+
+//starts function to generate a password
 function generatePassword() {
-// prompts user and ask for input
+// prompts user and requests for input
   enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
 
   if(!enter) {
@@ -103,12 +109,12 @@ else if (confirmNumber) {
 else if (confirmLowercase) {
   choices = alpha;
 }
-// Created space variable to fill uppercase conversion
+// space variable to fill uppercase conversion
 else if (confirmUppercase) {
   choices = space.concat(alpha2);
 };
 
-// password variable is an array placeholder for user generated amount of length
+// password variable is an array placeholder for user generated length amount
 var password = [];
 
 // Start random selection variables:
@@ -117,36 +123,22 @@ for (var i = 0; i < enter; i++) {
   var pickChoices = choices[Math.floor(Math.random() * choices.length)];
   password.push(pickChoices);
 }
+
 // This joins the password array and converts it to a string
-// Worked with a tutor to incorporate this option
-var ps = password.join("");
-UserInput(ps);
-return ps;
+
+var passwordText = password.join("");
+writePassword(passwordText);
+return passwordText;
 }
 // This puts the password value into the textbox
-// Changed function input to use textcontent
-function UserInput(ps) {
-document.getElementById("password").textContent = ps;
+// function input to use textcontent
+function writePassword(passwordText) {
+document.querySelector("#password").textContent = passwordText;
 
 }
 
 
-// // Assignment Code
-// var generateBtn = document.querySelector("#generate");
-
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
-
-
+//unsucessful attempt below;
 
 // var UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90)
 // var LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122)
@@ -168,6 +160,8 @@ document.getElementById("password").textContent = ps;
 // }
 
 
+
+
 //1. User clicks a button to generate a password
 //use eventlistener
 
@@ -187,6 +181,6 @@ document.getElementById("password").textContent = ps;
 //4.1 Then users answers will be validated
 //4.2 User MUST pick Length and MUST pick one charactertype
 
-//5. A password is generated and written to the page inside text BhxBrowser
+//5. A password is generated and written to the page inside text 
 
 
